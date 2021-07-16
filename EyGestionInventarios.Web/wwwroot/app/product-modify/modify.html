@@ -1,0 +1,55 @@
+﻿<div class="justify-content-center">
+    <div class="row justify-content-center">
+        <div class="col"></div>
+        <div class="col">
+            <h2 class="">Modificar articulo</h2>
+        </div>
+        <div class="col"></div>
+    </div>
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-8">
+            <form class="rounded border border-3 p-2" autocomplete="off">
+                <div class="row justify-content-center">
+                    <div class="col-2 col-form-label">
+                        <label for="formNombre" class="form-label">Nombre</label>
+                    </div>
+                    <div class="col">
+                        <input type="text" ng-model="producto.nombre" name="formNombre" maxlength="30" value="" class="form-control" />
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-sm-2 col-form-label">
+                        <label for="formCodigo" class="form-label">Codigo</label>
+                    </div>
+                    <div class="col">
+                        <input type="text" name="formCodigo" ng-model="producto.codArt" maxlength="7" required value="" class="form-control" />
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-sm-2 col-form-label">
+                        <label for="formDesc" class="form-label">Descripcion</label>
+                    </div>
+                    <div class="col">
+                        <input type="text" name="formDesc" ng-model="producto.descArt" maxlength="30" value="" class="form-control" />
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-sm-2 col-form-label">
+                        <label for="formCantidad" class="form-label">Cantidad</label>
+                    </div>
+                    <div class="col">
+                        <input type="number" name="formCantidad" ng-model="producto.cant" min="0" max="999" value="" class="form-control" />
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <button type="button" style="width:20%;" ng-click="modificarProducto()" class="btn btn-secondary">Modificar</button>
+                </div>
+            </form>
+        </div>
+        <div class="col"></div>
+    </div>
+</div>
+<div class="row">
+    <a href="/#!" class="btn btn-danger bt-back" style="width: 10%;">Regresar</a>
+</div>
